@@ -36,9 +36,9 @@ public class User {
     @Column(nullable = false)
     private String lastName;
 
-    @Enumerated(EnumType.STRING)
-    @Column(nullable = false)
-    private Role role = Role.CUSTOMER;
+//    @Enumerated(EnumType.STRING)
+//    @Column(nullable = false)
+//    private Role role = Role.CUSTOMER;
 
     @Column(nullable = false)
     private boolean enabled = true;
@@ -49,7 +49,7 @@ public class User {
     @UpdateTimestamp
     private LocalDateTime updatedAt;
 
-    public enum Role {
-        CUSTOMER, ADMIN, VENDOR
-    }
+//    public enum Role {
+//        CUSTOMER, ADMIN, VENDOR
+//    }
 }
